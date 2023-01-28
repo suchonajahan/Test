@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="DataProvider Testing Suite" duration-ms="13590" started-at="2023-01-28T12:24:23Z" finished-at="2023-01-28T12:24:37Z">
+    <groups>
+    </groups>
+    <test name="DataProvider" duration-ms="13590" started-at="2023-01-28T12:24:23Z" finished-at="2023-01-28T12:24:37Z">
+      <class name="DataProviderTest">
+        <test-method status="PASS" signature="fireFoxTest(java.lang.String)[pri:0, instance:DataProviderTest@610f7aa]" name="fireFoxTest" duration-ms="13565" started-at="2023-01-28T12:24:23Z" data-provider="data-provider" finished-at="2023-01-28T12:24:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[egg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fireFoxTest -->
+      </class> <!-- DataProviderTest -->
+    </test> <!-- DataProvider -->
+  </suite> <!-- DataProvider Testing Suite -->
+</testng-results>

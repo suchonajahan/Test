@@ -37,14 +37,19 @@ task automationRun(type: Test){
         System.out.println(testValue)
 
 
-//        if(testValue.equals("crossBrowser")){
-//            suites "src/test/crossBrowser.xml"
-//        }else if(testValue.equals("parallelTest")) {
-//            suites "src/test/parallelTest.xml"
+      if(testValue.equals("crossBrowser")){
+            suites "src/test/crossBrowser.xml"
+        }else if(testValue.equals("parallelTest")) {
+          suites "src/test/parallelTest.xml"
+      }
+//        if(testValue.equals("DataProviderTest")){
+//            suites "src/test/dataProvider.xml"
+//        }
 
-        if(testValue.equals("DataProviderTest")){
-            suites "src/test/dataProvider.xml"
-        }
+          else if(testValue.equals("cucumberTest")){
+
+              suites "src/test/testRunner.xml"
+          }
+      }
     }
 
-}

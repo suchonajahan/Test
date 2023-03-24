@@ -1,0 +1,28 @@
+//package AppAutomation;
+//
+//import io.appium.java_client.android.AndroidDriver;
+//import org.openqa.selenium.By;
+//
+//public class MakePaymentPage {
+//    public static AndroidDriver driver;
+//
+//    public MakePaymentPage(AndroidDriver driver) {
+//        this.driver = driver;
+//    }
+//
+//    public void sendPayment(String phone, String name, String amount, String country) throws InterruptedException {
+//        Thread.sleep(7000);
+//        driver.findElement(By.xpath("//*[@text='Make Payment']"));
+//        Thread.sleep(7000);
+//        driver.findElement(By.xpath("//*[@id='phoneTextField']")).sendKeys(phone);
+//        Thread.sleep(7000);
+//        driver.findElement(By.xpath("//*[@id='nameTextField']")).sendKeys(name);
+//        Thread.sleep(7000);
+//        driver.findElement(By.xpath("//*[@id='amountTextField']")).sendKeys(amount);
+//        Thread.sleep(7000);
+//        driver.findElement(By.xpath("//*[@text='Select']")).click();
+//        driver.findElement(By.xpath("//*[@text='India']")).click();
+//        Thread.sleep(7000);
+//        driver.findElement(By.xpath("//*[@text='Send Payment']")).click();
+//    }
+//}

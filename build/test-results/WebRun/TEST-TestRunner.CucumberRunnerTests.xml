@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestRunner.CucumberRunnerTests" tests="2" skipped="0" failures="1" errors="0" timestamp="2023-03-03T12:05:07" hostname="ShopUps-MacBook-Pro-3.local" time="36.332">
+  <properties/>
+  <testcase name="runScenario[0](&quot;Login to the bank&quot;, &quot;Optional[User login]&quot;)" classname="TestRunner.CucumberRunnerTests" time="31.847"/>
+  <testcase name="runScenario[1](&quot;&quot;, &quot;Optional.empty&quot;)" classname="TestRunner.CucumberRunnerTests" time="4.482">
+    <failure message="org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.7.0', revision: '0a5b49d16f'&#10;System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '17.0.5'&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Command: [af158d41-3329-4e8a-be9c-b488367d6739, findElement {using=xpath, value=//*[@id='phoneTextField']}]&#10;Capabilities {appium:appActivity: .LoginActivity, appium:appPackage: com.experitest.ExperiBank, appium:databaseEnabled: false, appium:desired: {appActivity: .LoginActivity, appPackage: com.experitest.ExperiBank, deviceName: Xiaomi Mi Note 10 Lite, platformName: android, platformVersion: 11}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Xiaomi, appium:deviceModel: Mi Note 10 Lite, appium:deviceName: a12aa2b2, appium:deviceScreenDensity: 461, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: a12aa2b2, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.8812501, appium:platformVersion: 11, appium:statBarHeight: 73, appium:takesScreenshot: true, appium:viewportRect: {height: 2065, left: 0, top: 73, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}&#10;Session ID: af158d41-3329-4e8a-be9c-b488367d6739" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '17.0.5'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [af158d41-3329-4e8a-be9c-b488367d6739, findElement {using=xpath, value=//*[@id='phoneTextField']}]
+Capabilities {appium:appActivity: .LoginActivity, appium:appPackage: com.experitest.ExperiBank, appium:databaseEnabled: false, appium:desired: {appActivity: .LoginActivity, appPackage: com.experitest.ExperiBank, deviceName: Xiaomi Mi Note 10 Lite, platformName: android, platformVersion: 11}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Xiaomi, appium:deviceModel: Mi Note 10 Lite, appium:deviceName: a12aa2b2, appium:deviceScreenDensity: 461, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: a12aa2b2, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.8812501, appium:platformVersion: 11, appium:statBarHeight: 73, appium:takesScreenshot: true, appium:viewportRect: {height: 2065, left: 0, top: 73, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: af158d41-3329-4e8a-be9c-b488367d6739
+	at java.base@17.0.5/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base@17.0.5/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base@17.0.5/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@17.0.5/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base@17.0.5/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at app//io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at app//org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at app//org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at app//AppAutomation.AppAutomationPage.sendPayment(AppAutomationPage.java:34)
+	at app//StepDefinition.MakePaymentStepdefs.userEnterPhoneAndNameAndAmountAndCountry(MakePaymentStepdefs.java:26)
+	at ✽.user enter '01711786756' and  'suchona' and '500' and 'India'(file:///Users/shopup/AutomationCoverage/AutomationCoverage/src/test/resources/Features/makePayment.feature:7)
+</failure>
+  </testcase>
+  <system-out><![CDATA[
+@smoke
+Scenario Outline: Login to the bank                  # src/test/resources/Features/appAutomation.feature:12
+  Given user is in the app                           # StepDefinition.AppAutomationStepdefs.userIsInTheApp()
+  When user enter 'company' and 'company' in the app # StepDefinition.AppAutomationStepdefs.userEnterUserNameAndPasswordInTheApp(java.lang.String,java.lang.String)
+test
+  Then user will login to the system                 # StepDefinition.AppAutomationStepdefs.userWillLoginToTheSystem()
+
+@smoke
+Scenario Outline:                                                    # src/test/resources/Features/makePayment.feature:12
+  Given user click on Make Payment                                   # StepDefinition.MakePaymentStepdefs.userClickOnMakePayment()
+  When user enter '01711786756' and  'suchona' and '500' and 'India' # StepDefinition.MakePaymentStepdefs.userEnterPhoneAndNameAndAmountAndCountry(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+      org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '17.0.5'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [af158d41-3329-4e8a-be9c-b488367d6739, findElement {using=xpath, value=//*[@id='phoneTextField']}]
+Capabilities {appium:appActivity: .LoginActivity, appium:appPackage: com.experitest.ExperiBank, appium:databaseEnabled: false, appium:desired: {appActivity: .LoginActivity, appPackage: com.experitest.ExperiBank, deviceName: Xiaomi Mi Note 10 Lite, platformName: android, platformVersion: 11}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Xiaomi, appium:deviceModel: Mi Note 10 Lite, appium:deviceName: a12aa2b2, appium:deviceScreenDensity: 461, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: a12aa2b2, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.8812501, appium:platformVersion: 11, appium:statBarHeight: 73, appium:takesScreenshot: true, appium:viewportRect: {height: 2065, left: 0, top: 73, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: af158d41-3329-4e8a-be9c-b488367d6739
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at AppAutomation.AppAutomationPage.sendPayment(AppAutomationPage.java:34)
+	at StepDefinition.MakePaymentStepdefs.userEnterPhoneAndNameAndAmountAndCountry(MakePaymentStepdefs.java:26)
+	at ✽.user enter '01711786756' and  'suchona' and '500' and 'India'(file:///Users/shopup/AutomationCoverage/AutomationCoverage/src/test/resources/Features/makePayment.feature:7)
+
+  Then user will make payment                                        # StepDefinition.MakePaymentStepdefs.userWillMakePayment()
+]]></system-out>
+  <system-err><![CDATA[SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+</testsuite>
